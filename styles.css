@@ -1,6 +1,16 @@
+/* DEFAULT STYLING IS FOR MOBILE */
+
 html,
 body {
   font-family: "Libre Franklin", sans-serif;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+}
+.social-icons-container img {
+  max-width: 2rem;
 }
 
 footer {
