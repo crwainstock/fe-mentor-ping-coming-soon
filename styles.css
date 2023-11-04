@@ -4,7 +4,26 @@ html,
 body {
   font-family: "Libre Franklin", sans-serif;
 }
+#email-input {
+  margin-bottom: 3rem;
+}
+#email-input form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+input[type="text"],
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
 
+button {
+  margin: 1rem 0;
+  padding: 0.5rem 3rem;
+}
 #dashboard-image img {
   max-width: 90%;
   display: flex;
