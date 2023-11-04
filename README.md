@@ -10,7 +10,11 @@ You can see a couple of other little, cutie builds [here](https://github.com/crw
 
 ## 🛠️ Technologies & Dependencies
 
-This component was built with HTML, vanilla CSS, and vanilla JavaScript. I also used [PerfectPixel](https://www.welldonecode.com/perfectpixel/) and the [Eye Dropper/Color Picker](https://eyedropper.org/) browser extensions to help with the build.
+This component was built with HTML, vanilla CSS, and vanilla JavaScript.
+
+I also used [PerfectPixel](https://www.welldonecode.com/perfectpixel/) and the [Eye Dropper/Color Picker](https://eyedropper.org/) browser extensions to help with the build.
+
+The social icons are from [Font Awesome](https://fontawesome.com/icons).
 
 I deployed the component with Netlify, though, so check that out [here]().
 
