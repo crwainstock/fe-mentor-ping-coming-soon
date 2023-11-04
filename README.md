@@ -16,10 +16,10 @@ I also used [PerfectPixel](https://www.welldonecode.com/perfectpixel/) and the [
 
 The social icons are from [Font Awesome](https://fontawesome.com/icons).
 
-I deployed the component with Netlify, though, so check that out [here]().
+I deployed the component with Netlify, though, so check that out [here](https://glowing-babka-60bb1c.netlify.app/).
 
 ## 🤔 Reflection
 
 ## 👀 Demo & Live Version
 
-Check out the live version of this component [here]().
+Check out the live version of this component [here](https://glowing-babka-60bb1c.netlify.app/).
