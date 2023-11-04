@@ -18,6 +18,7 @@ header img {
 }
 .light-text {
   font-weight: 300;
+  color: hsl(0, 0%, 59%);
 }
 #email-input {
   margin-bottom: 3rem;
@@ -41,7 +42,9 @@ button {
   border-radius: 50px;
   border: none;
 }
-
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
 button {
   margin: 1rem 0;
   padding: 1rem 3rem;
@@ -68,6 +71,10 @@ button {
 footer {
   margin-top: 3rem;
   text-align: center;
+}
+#copyright-text {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
 }
 .attribution {
   font-size: 16px;
