@@ -4,6 +4,13 @@ html,
 body {
   font-family: "Libre Franklin", sans-serif;
 }
+header img {
+  display: flex;
+  margin: 0 auto;
+}
+#hero-text {
+  text-align: center;
+}
 #email-input {
   margin-bottom: 3rem;
 }
