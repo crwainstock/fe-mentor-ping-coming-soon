@@ -8,9 +8,11 @@ body {
 .social-icons-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .social-icons-container img {
   max-width: 2rem;
+  max-height: 2rem;
 }
 
 footer {
