@@ -13,6 +13,9 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+input {
+  padding: 1rem 1rem;
+}
 input[type="text"],
 button {
   width: 100%;
@@ -22,7 +25,7 @@ button {
 
 button {
   margin: 1rem 0;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
 }
 #dashboard-image img {
   max-width: 90%;
