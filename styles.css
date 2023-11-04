@@ -60,9 +60,9 @@ button {
   justify-content: center;
 }
 .social-icons-container img {
-  max-width: 2rem;
-  max-height: 2rem;
-  margin: 2rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin: 1.5rem;
 }
 
 footer {
