@@ -4,12 +4,19 @@ html,
 body {
   font-family: "Libre Franklin", sans-serif;
 }
+header {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
 header img {
   display: flex;
   margin: 0 auto;
 }
 #hero-text {
   text-align: center;
+}
+.light-text {
+  font-weight: 300;
 }
 #email-input {
   margin-bottom: 3rem;
