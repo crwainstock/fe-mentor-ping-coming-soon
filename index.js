@@ -35,7 +35,12 @@ function showSuccessMessage() {
   // For example, you can create a div element and add it to the DOM.
   // Make sure to clear any previous error styles/messages if needed.
   let input = document.getElementById("email");
-  let successMessage = document.createElement("div");
+  let successMessageDiv = document.createElement("div");
+  successMessageDiv.textContent = "Success! Your email has been submitted.";
+  successMessageDiv.classList.add("success-message");
+
+  input.parentNode.insertBefore(successMessageDiv, input.nextSibling);
+  userEmailInput.style.borderColor = "";
 }
 
 function showErrorMessage(message) {
