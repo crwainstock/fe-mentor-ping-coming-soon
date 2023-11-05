@@ -48,6 +48,7 @@ function showSuccessMessage() {
 
   input.parentNode.insertBefore(successMessageDiv, input.nextSibling);
   userEmailInput.style.borderColor = "";
+  input.value = "";
 }
 
 function showErrorMessage(message) {
