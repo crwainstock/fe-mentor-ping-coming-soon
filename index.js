@@ -11,10 +11,6 @@ const submitEmail = (event) => {
   const userEmail = userEmailInput.value;
 
   if (isValidEmail(userEmail)) {
-    // If the userEmail is an email address
-    // submit the email address
-    // show success message below input
-
     showSuccessMessage();
   } else {
     // Turn input red, add error message below input
