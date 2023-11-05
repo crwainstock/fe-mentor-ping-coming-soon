@@ -34,6 +34,11 @@ function showSuccessMessage() {
   // Implement your logic to show a success message below the input field.
   // For example, you can create a div element and add it to the DOM.
   // Make sure to clear any previous error styles/messages if needed.
+  const previousSuccessMessage = document.querySelector(".success-message");
+  if (previousSuccessMessage) {
+    previousSuccessMessage.remove();
+  }
+
   let input = document.getElementById("email");
   let successMessageDiv = document.createElement("div");
   successMessageDiv.textContent = "Success! Your email has been submitted.";
