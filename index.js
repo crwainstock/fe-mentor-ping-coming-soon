@@ -35,8 +35,10 @@ function showSuccessMessage() {
   // For example, you can create a div element and add it to the DOM.
   // Make sure to clear any previous error styles/messages if needed.
   const previousSuccessMessage = document.querySelector(".success-message");
-  if (previousSuccessMessage) {
+  const previousErrorMessage = document.querySelector(".error-message");
+  if (previousSuccessMessage || previousErrorMessage) {
     previousSuccessMessage.remove();
+    previousErrorMessage.remove();
   }
 
   let input = document.getElementById("email");
