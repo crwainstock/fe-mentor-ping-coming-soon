@@ -21,7 +21,7 @@ header img {
   color: hsl(0, 0%, 59%);
 }
 #email-input {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 #email-input form {
   display: flex;
@@ -84,7 +84,7 @@ button {
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   text-align: center;
 }
 #copyright-text {

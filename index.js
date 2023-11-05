@@ -19,7 +19,7 @@ const submitEmail = (event) => {
   } else {
     // Turn input red, add error message below input
     userEmailInput.style.borderColor = "hsl(354, 100%, 66%)";
-    showErrorMessage("Please enter a valid email address.");
+    showErrorMessage();
   }
 };
 
@@ -30,16 +30,21 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
-function showSuccessMessage() {
-  // Implement your logic to show a success message below the input field.
-  // For example, you can create a div element and add it to the DOM.
-  // Make sure to clear any previous error styles/messages if needed.
+function removeMessages() {
   const previousSuccessMessage = document.querySelector(".success-message");
   const previousErrorMessage = document.querySelector(".error-message");
-  if (previousSuccessMessage || previousErrorMessage) {
+
+  if (previousSuccessMessage) {
     previousSuccessMessage.remove();
+  }
+
+  if (previousErrorMessage) {
     previousErrorMessage.remove();
   }
+}
+
+function showSuccessMessage() {
+  removeMessages();
 
   let input = document.getElementById("email");
   let successMessageDiv = document.createElement("div");
@@ -51,9 +56,15 @@ function showSuccessMessage() {
   input.value = "";
 }
 
-function showErrorMessage(message) {
-  // Implement your logic to show an error message below the input field.
-  // For example, you can create a div element, set the error message, and add it to the DOM.
+function showErrorMessage() {
+  removeMessages();
+
+  let input = document.getElementById("email");
+  let errorMessageDiv = document.createElement("div");
+  errorMessageDiv.textContent = "Please enter a valid email address.";
+  errorMessageDiv.classList.add("error-message");
+
+  input.parentNode.insertBefore(errorMessageDiv, input.nextSibling);
 }
 
 button.addEventListener("click", submitEmail);
