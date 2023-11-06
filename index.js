@@ -43,6 +43,7 @@ function showSuccessMessage() {
   removeMessages();
 
   let form = document.getElementById("form");
+  let input = document.getElementById("email");
   let successMessageDiv = document.createElement("div");
   successMessageDiv.textContent = "Success! Your email has been submitted.";
   successMessageDiv.classList.add("success-message");
