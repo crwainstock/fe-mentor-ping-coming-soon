@@ -102,4 +102,22 @@ footer {
     max-width: 80%;
     margin: 0 auto;
   }
+  #email-input form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type="text"],
+  button {
+    width: 30%;
+  }
+  input {
+    width: 60%;
+    max-height: 1rem;
+  }
+  button {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
 }
