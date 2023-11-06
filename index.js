@@ -2,18 +2,15 @@ const button = document.querySelector("button");
 const userEmailInput = document.getElementById("email");
 
 let userEmail = document.getElementById("email");
-// let message = document.createElement("div");
 
 const submitEmail = (event) => {
   event.preventDefault();
 
-  // Get the value of the email input
   const userEmail = userEmailInput.value;
 
   if (isValidEmail(userEmail)) {
     showSuccessMessage();
   } else {
-    // Turn input red, add error message below input
     userEmailInput.style.borderColor = "hsl(354, 100%, 66%)";
     showErrorMessage();
   }
