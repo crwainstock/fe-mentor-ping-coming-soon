@@ -94,3 +94,12 @@ footer {
 .attribution {
   font-size: 16px;
 }
+
+/* Larger Screens */
+
+@media only screen and (min-width: 900px) {
+  .site-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
