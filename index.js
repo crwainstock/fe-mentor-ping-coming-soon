@@ -42,12 +42,12 @@ function removeMessages() {
 function showSuccessMessage() {
   removeMessages();
 
-  let input = document.getElementById("email");
+  let form = document.getElementById("form");
   let successMessageDiv = document.createElement("div");
   successMessageDiv.textContent = "Success! Your email has been submitted.";
   successMessageDiv.classList.add("success-message");
 
-  input.parentNode.insertBefore(successMessageDiv, input.nextSibling);
+  form.parentNode.insertBefore(successMessageDiv, form.nextSibling);
   userEmailInput.style.borderColor = "";
   input.value = "";
 }
@@ -55,12 +55,12 @@ function showSuccessMessage() {
 function showErrorMessage() {
   removeMessages();
 
-  let input = document.getElementById("email");
+  let form = document.getElementById("form");
   let errorMessageDiv = document.createElement("div");
   errorMessageDiv.textContent = "Please enter a valid email address.";
   errorMessageDiv.classList.add("error-message");
 
-  input.parentNode.insertBefore(errorMessageDiv, input.nextSibling);
+  form.parentNode.insertBefore(errorMessageDiv, form.nextSibling);
 }
 
 button.addEventListener("click", submitEmail);
