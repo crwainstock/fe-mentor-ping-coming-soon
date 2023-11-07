@@ -26,13 +26,14 @@ One styling element that I hadn't used before was the [::placeholder pseudo-sele
 
 This is also the first project I've built with an email validation function. I decided to try to use Regex to check the format of the text entered in the input field.
 
-'''
+```
 function isValidEmail(email) {
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 console.log(emailRegex.test(email));
 return emailRegex.test(email);
 }
-'''
+```
+
 While this doesn't check the deliverability of the email, it checks the format of the text entered to make sure it aligns with standard email formatting.
 
 ## 👀 Demo & Live Version
