@@ -48,7 +48,7 @@ Another new method for me was the [.insertBefore() Node method](https://develope
 
 It takes two arguments: `insertBefore(newNode, referenceNode)`
 
-In the case of my showErrorMessage function (and the showSuccessMessage function as well) in this component, that means the errorMessageDiv created in the function is then added to the form (parent node) before the next sibling node (the dashboard image section).
+In the case of my showErrorMessage function (and the showSuccessMessage function as well) in this component, that means the errorMessageDiv created in the function is then added to the form's parent node (email-input section -- see image below for console.log of parent node) before the next sibling node (the dashboard image section).
 
 ```
 function showErrorMessage() {
