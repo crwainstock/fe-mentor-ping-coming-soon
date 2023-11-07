@@ -29,7 +29,7 @@ This is also the first project I've built with an email validation function. I d
 ```
 function isValidEmail(email) {
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-console.log(emailRegex.test(email));
+console.log(emailRegex.test(email)); // returns true or false
 return emailRegex.test(email);
 }
 ```
