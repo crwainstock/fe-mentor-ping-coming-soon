@@ -16,13 +16,13 @@ const submitEmail = (event) => {
   }
 };
 
+// Check the format of the input -- standard characters @ standard characters. ending
 function isValidEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   console.log(emailRegex.test(email));
   return emailRegex.test(email);
 }
 
-// Check the format of the input -- standard characters @ standard characters. ending
 function removeMessages() {
   const previousSuccessMessage = document.querySelector(".success-message");
   const previousErrorMessage = document.querySelector(".error-message");
@@ -57,7 +57,8 @@ function showErrorMessage() {
   let errorMessageDiv = document.createElement("div");
   errorMessageDiv.textContent = "Please enter a valid email address.";
   errorMessageDiv.classList.add("error-message");
-
+  //   console.log(form.parentNode);
+  //   console.log(form.parentNode.nextSibling);
   form.parentNode.insertBefore(errorMessageDiv, form.nextSibling);
 }
 

@@ -22,7 +22,11 @@ I deployed the component with Netlify, though, so check that out [here](https://
 
 I was excited to dive into this little build, and it was really enjoyable to put together. I've been working in React for so long, and this project was a nice little refresher for vanilla JavaScript.
 
+### 👇 Pseudo-Selector
+
 One styling element that I hadn't used before was the [::placeholder pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) to style the placeholder in the input field.
+
+### 📨 Email Validation Function
 
 This is also the first project I've built with an email validation function. I decided to try to use Regex to check the format of the text entered in the input field.
 
@@ -37,6 +41,33 @@ return emailRegex.test(email);
 While this doesn't check the deliverability of the email, it checks the format of the text entered to make sure it aligns with standard email formatting.
 
 This is also the first time I've used the [RegExp.prototype.test() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test). As far as I understand it, the method takes a string and compares it to the Regex outlined in the function (emailRegex in this case). Then it returns true or false depending on whether the string matches the Regex.
+
+### 👩‍🔬 Manipulating the DOM
+
+Another new method for me was the [.insertBefore() Node method](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore). According to the MDN documentation, "The insertBefore() method of the Node interface inserts a node before a reference node as a child of a specified parent node."
+
+It takes two arguments: `insertBefore(newNode, referenceNode)`
+
+In the case of my showErrorMessage function (and the showSuccessMessage function as well) in this component, that means the errorMessageDiv created in the function is then added to the form (parent node) before the next sibling node (the dashboard image section).
+
+```
+function showErrorMessage() {
+  removeMessages();
+
+  let form = document.getElementById("form");
+  let errorMessageDiv = document.createElement("div");
+  errorMessageDiv.textContent = "Please enter a valid email address.";
+  errorMessageDiv.classList.add("error-message");
+
+  form.parentNode.insertBefore(errorMessageDiv, form.nextSibling);
+}
+```
+
+The [.nextSibling property](https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling) allows the errorMessageDiv to be added before the next sibling node, whatever that might happen to be.
+
+Finally, the [.parentNode property](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode) returns the parent of the specified node in the DOM tree (see image below).
+
+![parent node console log](./project%20requirements/images/parentNode.png)
 
 ## 👀 Demo & Live Version
 
