@@ -71,6 +71,12 @@ Finally, the [.parentNode property](https://developer.mozilla.org/en-US/docs/Web
 
 ![parent node console log](./project%20requirements/images/parentNode.png)
 
+### 💭 Final Thoughts
+
+I really enjoyed working on this component and reviewing using vanilla JavaScript to manipulate the DOM. Despite the simplicity of this build, I learned a bit some new (to me) JavaScript methods and such (as outlined above).
+
+Thanks for reading!
+
 ## 👀 Demo & Live Version
 
 Check out the live version of this component [here](https://glowing-babka-60bb1c.netlify.app/).
