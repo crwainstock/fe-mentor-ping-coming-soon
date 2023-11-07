@@ -20,6 +20,21 @@ I deployed the component with Netlify, though, so check that out [here](https://
 
 ## 🤔 Reflection
 
+I was excited to dive into this little build, and it was really enjoyable to put together. I've been working in React for so long, and this project was a nice little refresher for vanilla JavaScript.
+
+One styling element that I hadn't used before was the [::placeholder pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) to style the placeholder in the input field.
+
+This is also the first project I've built with an email validation function. I decided to try to use Regex to check the format of the text entered in the input field.
+
+'''
+function isValidEmail(email) {
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+console.log(emailRegex.test(email));
+return emailRegex.test(email);
+}
+'''
+While this doesn't check the deliverability of the email, it checks the format of the text entered to make sure it aligns with standard email formatting.
+
 ## 👀 Demo & Live Version
 
 Check out the live version of this component [here](https://glowing-babka-60bb1c.netlify.app/).
