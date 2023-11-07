@@ -36,7 +36,7 @@ return emailRegex.test(email);
 
 While this doesn't check the deliverability of the email, it checks the format of the text entered to make sure it aligns with standard email formatting.
 
-This is also the first time I've used the [RegExp.prototype.test() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test).
+This is also the first time I've used the [RegExp.prototype.test() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test). As far as I understand it, the method takes a string and compares it to the Regex outlined in the function (emailRegex in this case). Then it returns true or false depending on whether the string matches the Regex.
 
 ## 👀 Demo & Live Version
 
