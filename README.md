@@ -24,7 +24,9 @@ I was excited to dive into this little build, and it was really enjoyable to put
 
 ### 👇 Pseudo-Selector
 
-One styling element that I hadn't used before was the [::placeholder pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) to style the placeholder in the input field.
+One styling element that I hadn't used before was the [::placeholder pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) to style the placeholder in the input field. In the quest to style the placeholder, I came across the pseudo-selector in the MDN docs. This is an example of not knowing what you don't know. 😆
+
+I didn't know this was a thing before this build, but now I have this little tool in my werkzeugkoffer ("toolbox" in German, sorry...I'm learing German as well, and my brain is all over the place) for future builds.
 
 ### 📨 Email Validation Function
 
