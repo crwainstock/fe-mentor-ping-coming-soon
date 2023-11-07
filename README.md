@@ -36,6 +36,8 @@ return emailRegex.test(email);
 
 While this doesn't check the deliverability of the email, it checks the format of the text entered to make sure it aligns with standard email formatting.
 
+This is also the first time I've used the [RegExp.prototype.test() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test).
+
 ## 👀 Demo & Live Version
 
 Check out the live version of this component [here](https://glowing-babka-60bb1c.netlify.app/).
